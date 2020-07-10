@@ -34,27 +34,12 @@
 	});
 
 	// service-carousel-3 active
-	$('#service-carousel-3').owlCarousel({
+	$('.banner-area').owlCarousel({
+		items:1,
 		loop: true,
 		smartSpeed: 800,
-		nav: true,
+		nav: false,
 		dots: true,
-		margin: 30,
-		navText: ["<i class='fal fa-angle-left'></i>", "<i class='fal fa-angle-right'></i>"],
-		//autoplay: true,
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1,
-				margin: 0
-			},
-			576: {
-				items: 2
-			},
-			992: {
-				items: 3
-			}
-		}
 	});
 
 	// Activate scroll to top

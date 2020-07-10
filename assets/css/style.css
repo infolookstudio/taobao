@@ -1234,3 +1234,6 @@ td.product-remove {
     left: 225px;
     top: -41px;
 }
+.cat-banner img {
+    border-radius: 5px;
+}

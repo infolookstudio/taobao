@@ -3,7 +3,7 @@
 }
 
 /* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
 	.img-box {
 		height: auto;
 	}
@@ -22,27 +22,46 @@
 
 	.banner-title.big {
 		font-size: 50px;
-    }
-    .banner-content {
-    padding-top: 133px;
-}
+	}
+	.banner-content {
+		padding-top: 133px;
+	}
+	.banner-area img {
+		min-height: auto;
+	}
+	.nav-cat-wrap::after {
+		right: 25px;
+	}
+	.nav-cat-wrap {
+		padding-right: 10px;
+	}
+	.nav-cat-menu {
+    width: calc(100% - 10px);}
 }
 
 /* Tablet desktop :768px. */
 @media (max-width: 991px) {
-    .site-logo {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-}
+	.site-logo {
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+	}
 
-.cart-user-wrap {
-    margin-top: 20px;
-    justify-content: center;
-}
+	.cart-user-wrap {
+		margin-top: 20px;
+		justify-content: center;
+	}
 
-.user-button {
-    margin-left: 30px;
+	.user-button {
+		margin-left: 30px;
+	}
+	.main-menu {
+		display: none;
+	}
+	.sideicon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 }
 

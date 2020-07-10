@@ -78,6 +78,46 @@
 
 
 	// Activate lightcase
-    $('a[data-rel^=lightcase]').lightcase();
+	$('a[data-rel^=lightcase]').lightcase();
+	
+	$(document).on('click', '.qty-plus', function () {
+		var input = $(this).prev('input');
+		var step = typeof input.attr('step') == 'undefined' ? 1 : parseInt(input.attr('step'));
+		var max = typeof input.attr('max') == 'undefined' ? false : parseInt(input.attr('max'));
+		var value = parseInt(input.val());
+		if (isNaN(max)) {
+			max = false;
+		}
+		value += step;
+		if (max && (value > max)) {
+			value = max;
+		}
+		input.val(value);
+		input.trigger('change');
+	});
+
+	$(document).on('click', '.qty-minus', function () {
+		var input = $(this).next('input');
+		var step = typeof input.attr('step') == 'undefined' ? 1 : parseInt(input.attr('step'));
+		var min = typeof input.attr('min') == 'undefined' ? 1 : parseInt(input.attr('min'));
+		if (isNaN(min)) {
+			min = 1;
+		}
+		var value = parseInt(input.val());
+		value -= step;
+		if (value < min) {
+			value = min;
+		}
+		input.val(value);
+		input.trigger('change');
+	});
+
+	$(".sideicon").on("click", function () {
+		$(".overlay, .sidebarlists").addClass("active");
+	});
+
+	$(".overlay, .crossbars").on("click", function () {
+		$(".sidebarlists, .overlay").removeClass("active");
+	});
 
 })(jQuery);

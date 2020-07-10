@@ -94,15 +94,16 @@
     <div class="nav-area">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-4">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-8">
                     <div class="nav-cat-wrap">
-                        <div class="nav-cat-btn">
-                            <i class="fa fa-bars"></i> 
+                        <a data-toggle="collapse" href="#cat" role="button" aria-expanded="true" aria-controls="collapseExample"
+                            class="nav-cat-btn">
+                            <i class="fa fa-bars"></i>
                             Categories
-                        </div>
-                        <div class="nav-cat-menu">
+                        </a>
+                        <div class="nav-cat-menu collapse show" id="cat">
                             <ul>
-                                <li><a href="#0">Electronic Devices</a></li>
+                                <li><a href="category.html">Electronic Devices</a></li>
                                 <li><a href="#0">Electronic Accessories</a></li>
                                 <li><a href="#0">TV & Home Appliances</a></li>
                                 <li><a href="#0">Health & Beauty</a></li>
@@ -117,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-9 col-lg-9 col-md-8">
+                <div class="col-xl-9 col-lg-9 col-md-6 col-4">
                     <div class="main-menu">
                         <nav>
                             <ul>
@@ -129,25 +130,40 @@
                             </ul>
                         </nav>
                     </div>
+                    <div class="sideicon">
+                        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                        <label for="navi-toggle" class="navigation__button">
+                            <span class="navigation__icon">&nbsp;</span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- nav area end -->
 
-    <!-- Banner area start -->
-    <section class="banner-area bg_img" data-background="assets/images/banner-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-9 offset-2">
-                    <div class="banner-content">
-                        <h1 class="banner-title"><span>২০০০</span> টাকার বেশি কিনলেই...</h1>
-                        <h1 class="banner-title big"><span>ফ্রী</span> ডেলিভারি!!</h1>
-                        <img src="assets/images/truck-shape.png" alt="" class="truck-shape">
-                    </div>
-                </div>
+    <div class="overlay"></div>
+
+    <!-- hamburger menu start -->
+    <div class="hamburger-menu">
+        <div class="sidebarlists">
+            <div class="crossbars">
+                <button></button>
             </div>
+            <ul>
+                <li class="active"><a href="#0">New Arrivals</a></li>
+                <li><a href="#0">99 Zone</a></li>
+                <li><a href="#0">2020 Mega Offer</a></li>
+                <li><a href="#0">Gift Corner</a></li>
+                <li><a href="#0">Execlusive Deal</a></li>
+            </ul>
         </div>
+    </div>
+    <!-- hamburger menu end -->
+
+    <!-- Banner area start -->
+    <section class="banner-area">
+        <img src="assets/images/banner-bg.jpg" alt="">
     </section>
     <!-- Banner area end -->
 
@@ -203,7 +219,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center">
-                    <div class="section-heading mb-50">
+                    <div class="section-heading mb-30">
                         <h2 class="heading-title">Explore Popular Categories</h2>
                     </div>
                 </div>
@@ -499,7 +515,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 text-center">
-                    <div class="section-heading mb-50">
+                    <div class="section-heading mb-30">
                         <h2 class="heading-title">Shop By Brands</h2>
                     </div>
                 </div>

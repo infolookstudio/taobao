@@ -240,14 +240,14 @@ img {
 
 .nav-cat-menu {
 	background: #e4ecf5;
-	padding: 10px 15px;
+	padding: 12px 15px;
 	position: absolute;
 	width: calc(100% - 35px);
 	z-index: 2;
 }
 
 .nav-cat-menu li:not(:last-child) {
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
 
 .nav-cat-menu a {
@@ -272,7 +272,7 @@ img {
 }
 
 .banner-area img {
-    min-height: 384px;
+    min-height: 358px;
 }
 
 /* offer icon css */

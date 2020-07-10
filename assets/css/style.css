@@ -179,11 +179,6 @@ img {
 	background: #112942;
 }
 
-.main-menu ul {
-	display: flex;
-	margin-left: 30px;
-}
-
 .main-menu ul li:not(:first-child) {
 	margin-left: 40px;
 }
@@ -212,7 +207,6 @@ img {
 
 .main-menu ul {
 	display: flex;
-	margin-left: 30px;
 }
 
 .main-menu ul li:not(:first-child) {
@@ -253,7 +247,7 @@ img {
 .nav-cat-menu a {
 	color: #3e5369;
 }
-.nav-cat-menu a:hover {
+.nav-cat-menu li:hover > a {
 	color: #ff5001;
 }
 
@@ -448,6 +442,8 @@ img {
 
 .product-thumb {
 	overflow: hidden;
+	display: block;
+	text-align: center;
 }
 
 .product-thumb img {
@@ -793,23 +789,29 @@ img {
 }
 
 .product-tab li a {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 	color: #444;
+	font-weight: 400;
 }
 
 .product-tab ul {
-	justify-content: center;
+	justify-content: flex-start;
 	margin-bottom: 20px;
 }
 
 .product-tab ul a.active {
 	border-color: #ff5001;
+	color: #ff5001;
 }
 
 .product-tab ul a {
 	border-bottom: 2px solid transparent;
 	text-transform: uppercase;
+}
+
+.product-tab ul a:hover {
+    color: #ff5001;
 }
 
 .releted-product .title {
@@ -931,7 +933,7 @@ td.product-remove {
 
 .order-summery h4 {
 	color: #444;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .order-summery h5 {
@@ -986,13 +988,15 @@ td.product-remove {
 
 .grand-total li span {
 	text-transform: uppercase;
-	color: #7a8a9e;
+	color: #222;
+	font-weight: 700;
 }
 
 .grand-total li {
 	display: flex;
 	justify-content: space-between;
 	color: #ff4f00;
+	font-weight: 700;
 }
 
 .single-cart-top.active .icon,
@@ -1199,4 +1203,34 @@ td.product-remove {
 
 .sidebarlists .mainmenu ul {
     display: block;
+}
+
+.nav-cat-menu li {
+    position: relative;
+}
+
+.nav-cat-menu li .sub-menu {
+    position: absolute;
+    left: 220px;
+    background: #E4ECF5;
+    width: 235px;
+    top: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+    min-height: 358px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.nav-cat-menu li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: -12px;
+}
+.nav-cat-menu li .sub-menu .sub-menu {
+    left: 225px;
+    top: -41px;
 }

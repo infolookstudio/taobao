@@ -67,6 +67,21 @@
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
+	.result-count {
+    text-align: center;
+}
+
+.short-by-lisr {
+    text-align: center;
+}
+
+.short-wrapper {
+    justify-content: center;
+    margin-top: 10px;
+}
+.back-conti-btns .col-md-6 {
+    text-align: center !important;
+}
 }
 
 /* Large Mobile :560px. */
@@ -75,4 +90,12 @@
 
 /* Device 575 */
 @media (max-width: 575px) {
+	.search-field {
+    flex-basis: 50%;
+}
+}
+@media (max-width: 420px) {
+	.search-field {
+    flex-basis: 40%;
+}
 }

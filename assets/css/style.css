@@ -43,7 +43,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 14px;
 	color: #7a8a9e;
 }
 
@@ -109,7 +109,7 @@ img {
 
 .search-field input {
 	border: none;
-	padding: 11px 15px;
+	padding: 12.5px 15px;
 }
 
 .search-cat-list .nice-select {
@@ -236,7 +236,7 @@ img {
 	background: #e4ecf5;
 	padding: 12px 15px;
 	position: absolute;
-	width: calc(100% - 35px);
+	width: calc(100% - 60px);
 	z-index: 2;
 }
 
@@ -253,7 +253,7 @@ img {
 
 .nav-cat-wrap {
 	position: relative;
-	padding-right: 35px;
+	padding-right: 60px;
 }
 .nav-cat-wrap::after {
     content: "\f107";
@@ -261,12 +261,12 @@ img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 45px;
+    right: 70px;
     color: #282828;
 }
 
 .banner-area img {
-    min-height: 358px;
+    min-height: 325px;
 }
 
 /* offer icon css */
@@ -287,7 +287,7 @@ img {
 }
 .heading-title {
 	color: #323232;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 700;
 }
 .single-cat-box .cat-title {
@@ -328,7 +328,7 @@ img {
 
 /* product css */
 .heading-title.small {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .single-product {
@@ -387,13 +387,14 @@ img {
 }
 .social-links a {
 	display: block;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border-radius: 40px;
 	border: 1px solid #b5c8e8;
 	color: #b5c8e8;
 	text-align: center;
-	line-height: 40px;
+	line-height: 30px;
+	font-size: 11px;
 }
 
 .social-links a:hover {
@@ -402,11 +403,11 @@ img {
 	border-color: transparent;
 }
 .social-links a:not(:last-child) {
-	margin-right: 10px;
+	margin-right: 8px;
 }
 
 .footer-widget li:not(:last-child) {
-	margin-bottom: 12px;
+	margin-bottom: 10px;
 }
 
 .footer-widget li a {
@@ -602,7 +603,7 @@ img {
 }
 
 .sidebar-widget li:not(:last-child) {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 .woo-sidebar {
 	background: #f5f5f5;
@@ -1211,15 +1212,15 @@ td.product-remove {
 
 .nav-cat-menu li .sub-menu {
     position: absolute;
-    left: 220px;
+    left: 195px;
     background: #E4ECF5;
-    width: 235px;
+    width: 200px;
     top: 0px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
-    min-height: 358px;
+    min-height: 325px;
     opacity: 0;
     visibility: hidden;
     transition: .2s;
@@ -1231,9 +1232,16 @@ td.product-remove {
     top: -12px;
 }
 .nav-cat-menu li .sub-menu .sub-menu {
-    left: 225px;
-    top: -41px;
+    left: 190px;
 }
 .cat-banner img {
     border-radius: 5px;
+}
+.download-wrap a {
+    display: block;
+    width: 80%;
+}
+
+.download-wrap a:first-child {
+    margin-bottom: 10px;
 }

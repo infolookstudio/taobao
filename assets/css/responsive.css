@@ -11,8 +11,12 @@
 		border-color: transparent;
 	}
 	.search-field {
-		flex-basis: 57%;
+		flex-basis: 64%;
 	}
+	.search-submit {
+    position: absolute;
+    right: 0;
+}
 	.banner-title.big span {
 		font-size: 60px;
 	}
@@ -41,6 +45,9 @@
 
 /* Tablet desktop :768px. */
 @media (max-width: 991px) {
+	.search-field {
+		flex-basis: 68%;
+	}
 	.site-logo {
 		display: block;
 		text-align: center;
@@ -91,11 +98,22 @@
 /* Device 575 */
 @media (max-width: 575px) {
 	.search-field {
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 }
 @media (max-width: 420px) {
 	.search-field {
-    flex-basis: 40%;
+    flex-basis: 52%;
+}
+
+}
+@media (max-width: 350px) {
+	.search-cat-list .nice-select .current {
+    font-size: 13px;
+}
+
+.search-field input {
+    font-size: 12px;
+    padding: 14px 15px;
 }
 }

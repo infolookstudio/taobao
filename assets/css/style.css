@@ -78,7 +78,7 @@ input[type="url"],
 select,
 textarea {
 	border: 1px solid #cacaca;
-	padding: 10px 15px;
+	padding: 11px 15px;
 	border-radius: 5px;
 	width: 100%;
 }
@@ -830,6 +830,7 @@ img {
 	text-align: center;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	background: #FFF;
 }
 
 .single-cart-top .icon {
@@ -920,16 +921,19 @@ td.product-remove {
 
 .cart-items {
 	margin-bottom: 30px;
+	background: #fff;
 }
 
 .shopping-cart {
 	padding-bottom: 30px;
+	background: #F5F5F5;
 }
 
 .order-summery {
 	border: 1px solid #ccc;
 	padding: 20px 20px;
 	margin-top: 20px;
+	background: #fff;
 }
 
 .order-summery h4 {
@@ -1244,4 +1248,156 @@ td.product-remove {
 
 .download-wrap a:first-child {
     margin-bottom: 10px;
+}
+
+.cart-items .qty-plus-minus span:hover {
+    background: #FF4F00;
+    color: #fff;
+}
+
+.shipping-details {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.site-header.sticky {
+    position: fixed !important;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.1);
+}
+
+.site-header.page.sticky {
+    background: #fff;
+}
+
+.site-header.animated {
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+.search-cat-list .nice-select .current {
+    font-weight: 600;
+    color: #222;
+}
+
+.single-payment-box {
+    background: #000;
+    display: block;
+    text-align: center;
+    padding: 20px 6px;
+    min-height: 206px;
+}
+
+.single-payment-box .title {
+    color: #222;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.payment .col-lg-4:nth-child(1) .single-payment-box  {
+	background: #F4D5DB;
+} 
+.payment .col-lg-4:nth-child(2) .single-payment-box  {
+	background: #FEC4DD;
+} 
+.payment .col-lg-4:nth-child(3) .single-payment-box  {
+	background: #F0DFEF;
+} 
+.payment .col-lg-4:nth-child(4) .single-payment-box  {
+	background: #F7DEC0;
+} 
+.payment .col-lg-4:nth-child(5) .single-payment-box  {
+	background: #C7E3EF;
+} 
+.payment .col-lg-4:nth-child(6) .single-payment-box  {
+	background: #FBDDDB;
+} 
+
+.single-product-del .icon img {
+    width: auto;
+}
+
+.product-dell-wrap .single-product-del {
+    display: flex;
+    align-items: center;
+    background: #F8E6CC;
+    padding: 20px 20px;
+}
+
+.product-dell-wrap .single-product-del h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #545454;
+}
+
+.product-dell-wrap .single-product-del span {
+    text-transform: uppercase;
+    color: #FF6D0E;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.single-product-del .icon {
+    margin-right: 20px;
+    flex-basis: 15%;
+}
+
+.saller-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.name-star ul {
+    display: flex;
+}
+
+.single-product-del .content {
+    flex-basis: 80%;
+}
+
+.chat-btn {
+    color: #307EC2;
+    font-weight: 600;
+    margin-top: 5px;
+    display: block;
+}
+
+.saller-btn {
+    background: #FF9A00;
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 40px;
+    font-size: 12px;
+}
+
+.saller-btn:hover {
+    background: #112942;
+    color: #fff;
+}
+
+.name-star ul li {
+    color: #FF9A00;
+}
+
+.name-star ul li:last-child {
+    color: #B1B1B1;
+}
+
+.product-dell-wrap .single-product-del:nth-child(2) {
+	background: #DEE8CA;
+}
+.product-dell-wrap .single-product-del:nth-child(3) {
+	background: #CFE7EE;
+}
+.product-dell-wrap .single-product-del:nth-child(4) {
+	background: #EBE8E8;
+}
+
+.download-wrap img {
+    width: 175px;
 }

@@ -105,4 +105,14 @@
 		$(".sidebarlists, .overlay").removeClass("active");
 	});
 
+	// menu options custom affix
+	var fixed_top = $(".site-header");
+	$(window).on("scroll", function () {
+		if ($(window).scrollTop() > 70) {
+			fixed_top.addClass("animated fadeInDown sticky");
+		} else {
+			fixed_top.removeClass("animated fadeInDown sticky");
+		}
+	});
+
 })(jQuery);

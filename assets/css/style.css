@@ -266,7 +266,7 @@ img {
 }
 
 .banner-area img {
-    min-height: 325px;
+    max-height: 325px;
 }
 
 /* offer icon css */
@@ -646,6 +646,10 @@ img {
 	border-radius: 5px;
 	color: #fff;
 }
+.site-btn.two {
+	background: #DD8500;
+}
+
 .site-btn:hover {
 	background: #112942;
 	color: #fff;
@@ -790,7 +794,7 @@ img {
 }
 
 .product-tab li a {
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: 600;
 	color: #444;
 	font-weight: 400;
@@ -850,7 +854,7 @@ img {
 	display: block;
 }
 
-.cart-top .col-xl-4:not(:last-child) .single-cart-top {
+.cart-top .col-md-4:not(:last-child) .single-cart-top {
 	border-right: 1px solid #ccc;
 }
 

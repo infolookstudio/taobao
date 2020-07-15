@@ -109,10 +109,21 @@
 	var fixed_top = $(".site-header");
 	$(window).on("scroll", function () {
 		if ($(window).scrollTop() > 70) {
-			fixed_top.addClass("animated fadeInDown sticky");
+			fixed_top.addClass("sticky");
 		} else {
-			fixed_top.removeClass("animated fadeInDown sticky");
+			fixed_top.removeClass("sticky");
 		}
 	});
+
+	var cat_menu = $('.home .nav-cat-menu');
+	$(window).on("scroll", function () {
+		if ($(window).scrollTop() > 70) {
+			cat_menu.removeClass("show");
+		} else {
+			cat_menu.addClass("show");
+		}
+	});
+
+
 
 })(jQuery);

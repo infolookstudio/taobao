@@ -1655,3 +1655,30 @@ li.mega-menu ul ul li:not(:last-child) {
     width: 270px;
     z-index: 1;
 }
+
+.single-payment-box .icon {
+    min-height: 120px;
+}
+
+/* slide css */
+.banner-area .owl-dots div {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ffffffa6;
+    border-radius: 40px;
+    margin: 0 3px;
+}
+
+.banner-area .owl-dots {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    bottom: 20px;
+}
+
+.banner-area .owl-dots div.active {
+    background: #ffffffa6;
+}

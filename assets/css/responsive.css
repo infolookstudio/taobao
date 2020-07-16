@@ -1,5 +1,8 @@
 /* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+	li.mega-menu > ul {
+		width: 800px;
+	}
 }
 
 /* Normal desktop :992px. */
@@ -14,9 +17,9 @@
 		flex-basis: 64%;
 	}
 	.search-submit {
-    position: absolute;
-    right: 0;
-}
+		position: absolute;
+		right: 0;
+	}
 	.banner-title.big span {
 		font-size: 60px;
 	}
@@ -40,12 +43,19 @@
 		padding-right: 10px;
 	}
 	.nav-cat-menu {
-    width: calc(100% - 10px);}
+		width: calc(100% - 10px);
+	}
+	li.mega-menu > ul {
+		left: 200px;
+		width: 700px;
+	}
+	.search-submit {
+		right: -5px;
+	}
 }
 
 /* Tablet desktop :768px. */
 @media (max-width: 991px) {
-
 	.site-logo {
 		display: block;
 		text-align: center;
@@ -64,32 +74,71 @@
 		display: none;
 	}
 	.sideicon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.search-by-cat {
+		margin-right: 0px;
+	}
+	.search-submit {
+		right: -5px;
+	}
+	.slicknav_menu {
+		display: block;
+	}
+
+	li.mega-menu.slicknav_open > ul {
+		opacity: 1;
+		visibility: visible;
+		position: inherit;
+		width: 100%;
+		background: transparent;
+		left: 0;
+		margin: 0;
+	}
+	li.mega-menu.slicknav_open .row .col-md-3 {
+		flex-basis: 100% !important;
+		max-width: 100%;
+	}
+	li.mega-menu.slicknav_open .row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	li.mega-menu.slicknav_open .row ul {
+		background: transparent;
+		margin: 0;
+	}
+	li.mega-menu.slicknav_open h4.title {
+		color: #fff;
+	}
+	li.mega-menu.slicknav_open .row ul a {
+		margin: 0;
+	}
 }
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
 	.result-count {
-    text-align: center;
-}
+		text-align: center;
+	}
 
-.short-by-lisr {
-    text-align: center;
-}
+	.short-by-lisr {
+		text-align: center;
+	}
 
-.short-wrapper {
-    justify-content: center;
-    margin-top: 10px;
-}
-.back-conti-btns .col-md-6 {
-    text-align: center !important;
+	.short-wrapper {
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.back-conti-btns .col-md-6 {
+		text-align: center !important;
+	}
+	.cart-item-wrap {
+    flex-direction: column;
 }
 }
 
 /* Large Mobile :560px. */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
 }
-

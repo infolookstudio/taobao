@@ -1383,7 +1383,7 @@ td.product-remove {
 .header-top {
     padding: 5px 0;
 }
-.search-by-cat-wrap {position: relative;}
+.search-by-cat-wrap {position: relative;margin-top: 4px;}
 
 .search-by-cat {
     margin-right: 90px;

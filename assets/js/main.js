@@ -124,11 +124,19 @@
 		}
 	});
 
+	var sidebar = $(".woo-sidebar");
+	$(window).on("scroll", function () {
+		if ($(window).scrollTop() > 220) {
+			sidebar.addClass("sticky");
+		} else {
+			sidebar.removeClass("sticky");
+		}
+	});
+
 	//***** SlickNAv JS *****// 
 	$("#traffic-menu").slicknav({
 		prependTo: '#mobile-menu-wrap'
 	});
-
 
 
 })(jQuery);

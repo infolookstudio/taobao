@@ -1770,7 +1770,7 @@ span.followed i {
 
 .user-button .user-menu a {
     color: #222;
-    padding: 6px 10px;
+    padding: 10px 10px;
     display: block;
 	font-size: 12px;
 	font-weight: 500;
@@ -1849,7 +1849,11 @@ span.followed i {
     padding: 9px;
     border: none;
     border-radius: 0;
-    background: #fff;
+	background: #fff;
+	color: #FEB300;
+}
+.login-form input::placeholder {
+	color: #ccc;
 }
 
 .login-form .nice-select {
@@ -1890,4 +1894,12 @@ span.followed i {
     font-weight: 600;
     font-size: 16px;
     padding: 10px 60px;
+}
+
+.vendor-widget-wrap .icon img {
+    border-radius: 50%;
+}
+
+.cart-user-wrap .cart-button {
+    transform: translateX(-20px);
 }

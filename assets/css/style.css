@@ -170,10 +170,6 @@ img {
 	margin-right: 20px;
 }
 
-.user-button .user-menu {
-	display: none;
-}
-
 /* nav css */
 .nav-area {
 	background: #112942;
@@ -1681,4 +1677,217 @@ li.mega-menu ul ul li:not(:last-child) {
 
 .banner-area .owl-dots div.active {
     background: #ffffffa6;
+}
+
+.main-menu .site-btn {
+	background: #153250;
+	font-size: 12px;
+	padding: 7px 15px;
+	font-weight: 600;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu .site-btn:hover {
+    background: #FF4F00;
+}
+.vendor-widget-wrap .icon {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+a.review-ratting {
+    display: block;
+    color: #FF4F00;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+span.followed {
+    font-size: 12px;
+    color: #222;
+    display: block;
+    margin-bottom: 15px;
+}
+
+span.followed i {
+    margin-right: 5px;
+}
+
+.vendor-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vendor-buttons a:first-child {
+    background: #ECECEC;
+    color: #222;
+    flex-basis: 35%;
+    margin-right: 10px;
+}
+
+.vendor-buttons a:last-child {
+    flex-basis: 75%;
+}
+
+.vendor-buttons a {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.vendor-name {
+    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar-widget.vendor {
+    border: 2px solid #DCDCDC;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.vendor-buttons a:first-child:hover {
+	background: #112942;
+	color: #fff;
+}
+
+.user-button {
+    position: relative;
+}
+
+.user-button .user-icon {
+    cursor: pointer;
+}
+
+.user-button .user-menu a {
+    color: #222;
+    padding: 6px 10px;
+    display: block;
+	font-size: 12px;
+	font-weight: 500;
+}
+.user-button .user-menu a:hover {
+	color: #FF4B31;
+}
+
+.user-button .user-menu li:not(:last-child) a {
+    border-bottom: 1px solid #cccc;
+}
+
+.user-icon:hover  .user-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.user-button .user-menu {
+	position: absolute;
+	width: 160px;
+	background: #fff;
+	border-radius: 5px;
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	left: -95px;
+	padding: 5px 0px;
+}
+
+/* login and register */
+.login-form .submit {text-align: center;}
+
+.login-btns {
+    display: flex;
+    align-items: center;
+}
+
+.login-btns a {
+    flex-basis: 50%;
+    text-align: center;
+    color: #222;
+    font-weight: 600;
+}
+
+.login-btns a:first-child {
+    border-radius: 5px 0px 0px 5px;
+    background: #F3C823;
+}
+
+.login-btns a:last-child {
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+}
+
+.login-btns a:hover {
+    background: #112942;
+}
+
+.login-head .title {
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+    margin: 16px 0;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.login-form label {
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login-form input {
+    border-radius: 0;
+    padding: 9px;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+}
+
+.login-form .nice-select {
+    width: 100%;
+}
+
+.form-group.aggree a {
+    color: #BC5E84;
+    font-weight: 500;
+}
+
+.form-group.aggree {
+    background: #fff;
+    padding: 10px 15px;
+    display: flex;
+}
+
+.form-group.aggree input {margin-right: 8px;transform: translateY(3px);cursor: pointer;flex-basis: 13px;}
+
+.form-group.aggree a span {
+    color: #F3C823;
+}
+
+.terms-text {
+    flex-basis: 100%;
+}
+
+.login-form  .nice-select {
+	margin-bottom: 15px;
+}
+
+.nice-select .list {
+	width: 100%;
+}
+
+.login-form .submit .site-btn {
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 60px;
 }

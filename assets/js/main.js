@@ -133,10 +133,5 @@
 		}
 	});
 
-	//***** SlickNAv JS *****// 
-	$("#traffic-menu").slicknav({
-		prependTo: '#mobile-menu-wrap'
-	});
-
 
 })(jQuery);
